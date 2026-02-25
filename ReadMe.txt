@@ -1,1 +1,1 @@
-Some text for Laboratory task
+Some information
