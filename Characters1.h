@@ -13,17 +13,14 @@ private:
     int XP;
 
 public:
-    // Конструктор з 3 аргументами (Основний)
     MainHero(string nameInp, int healthInp, int xpInp);
 
-    // Перевантажені конструктори для делегування
-    MainHero();                          // 0 аргументів
-    MainHero(string nameInp);            // 1 аргумент
-    MainHero(string nameInp, int healthInp); // 2 аргументи
+    MainHero();
+    MainHero(string nameInp);
+    MainHero(string nameInp, int healthInp);
 
-    ~MainHero(); // Деструктор
+    ~MainHero();
 
-    // Геттери та сеттери
     string getName() { return name; }
     int getHealth() { return health; }
     void setHealth(int h) { if(h >= 0) health = h; }
